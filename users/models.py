@@ -20,6 +20,6 @@ class User(AbstractUser):
         (GENDER_OTHER, "Other"),
     )
 
-    avatar = models.ProcessedImageField(upload_to="avatars", processors=[ResizeToFill(120, 120)], format='JPEG', options={'quality': 60})
+    avatar = ProcessedImageField(upload_to="avatars", processors=[ResizeToFill(120, 120)], format='JPEG', options={'quality': 60})
     gender = models.CharField(choices=GENDER_CHOICES, max_length=10, blank=True)
     birthdate = models.DateField(blank=True, null=True)

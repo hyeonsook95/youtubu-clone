@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     "django_countries",
     "debug_toolbar",
     "django_seed",
+    "imagekit",
 ]
 
 PROJECTS_APPS = [

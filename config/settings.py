@@ -54,6 +54,7 @@ PROJECTS_APPS = [
     "posts.apps.PostsConfig",
     "comments.apps.CommentsConfig",
     "channels.apps.ChannelsConfig",
+    "lists.apps.ListsConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECTS_APPS + THIRD_PARTY_APPS

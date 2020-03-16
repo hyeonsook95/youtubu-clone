@@ -16,13 +16,11 @@ class PostAdmin(admin.ModelAdmin):
         "get_thumbnail",
     )
 
-    list_filter = (
-        "category",
-    )
+    list_filter = ("category",)
 
     search_fields = (
         "^user__username",
-        "title",
+        "^title",
     )
 
     def get_thumbnail(self, obj):

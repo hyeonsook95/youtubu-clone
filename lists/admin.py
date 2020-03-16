@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import List
 
 
-@admin.register()
+@admin.register(List)
 class ListAdmin(admin.ModelAdmin):
 
     """ List Admin 정의 """

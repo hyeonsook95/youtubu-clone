@@ -7,7 +7,7 @@ class List(TimeStampedModel):
     """ List Model 정의 """
 
     creator = models.ForeignKey(
-        "users.User", on_delete=models.SET_NULL, related_name="lists"
+        "users.User", on_delete=models.SET_NULL, related_name="lists", null=True
     )
     name = models.CharField(max_length=50)
     post = models.ManyToManyField("posts.Post", related_name="lists")

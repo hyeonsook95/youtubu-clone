@@ -18,7 +18,7 @@ class CustomUserAdmin(UserAdmin):
         "last_name",
         "email",
         "gender",
-        "channel",
+        "count_channels",
         "is_staff",
         "is_superuser",
     )

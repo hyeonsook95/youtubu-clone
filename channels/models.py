@@ -7,7 +7,7 @@ class Channel(TimeStampedModel):
     """ Channel Model 정의 """
 
     creator = models.ForeignKey(
-        "users.User", on_delete=models.SET_NULL, related_name="channels"
+        "users.User", on_delete=models.SET_NULL, related_name="channels", null=True
     )
     name = models.CharField(max_length=50)
     art = models.ImageField(upload_to="channels")

@@ -2,24 +2,15 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User
 
+
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
 
     """ Custom User Admin """
 
     fieldsets = UserAdmin.fieldsets + (
-        (
-            "Custom Profile",
-            {
-                "fields": (
-                    "avatar",
-                    "gender",
-                    "birthdate",
-                )
-            },
-        ),
+        ("Custom Profile", {"fields": ("avatar", "gender", "birthdate",)},),
     )
-
 
     list_display = (
         "username",
@@ -27,6 +18,7 @@ class CustomUserAdmin(UserAdmin):
         "last_name",
         "email",
         "gender",
+        "channel",
         "is_staff",
         "is_superuser",
     )

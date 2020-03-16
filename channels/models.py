@@ -16,12 +16,4 @@ class Channel(TimeStampedModel):
     def count_subscribes(self):
         subscribe = self.subscribes.all().count()
         return subscribe
-    
-    def count_views(self):
-        view = self.views.all().count()
-        return view
-
-    def count_comments(self):
-        comment = self.comments.all().count()
-        return comment
     """

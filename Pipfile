@@ -8,7 +8,7 @@ black = "*"
 flake8 = "*"
 
 [packages]
-django = "==2.2.5"
+django = "==2.2.13"
 djangorestframework = "*"
 django-debug-toolbar = "*"
 django-dotenv = "*"
